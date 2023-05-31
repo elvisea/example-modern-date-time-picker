@@ -61,6 +61,7 @@ const App: React.FC = () => {
             <ModernDatepicker
               mode="calendar"
               style={{ borderRadius: 12 }}
+              selected={type === "inicial" ? data.inicial : data.final}
               options={{ textHeaderColor: "#D6C200" }}
               onDateChange={(date) => onDateChange(date)}
             />
@@ -110,7 +111,7 @@ const styles = StyleSheet.create({
   buttom: {
     width: "100%",
     height: 60,
-    backgroundColor: "#7159c1",
+    backgroundColor: "#D6C200",
     borderRadius: 8,
     marginBottom: 8,
     alignItems: "center",
